@@ -366,7 +366,7 @@ bool Graphics::InitializeScene()
 		this->cb_ps_light.data.ambientLightStrength = 1.0f;
 
 		// Samples orange_embeddedtexture.fbx person_embeddedindexed.blend  nanosuit\\nanosuit.obj   dodge_challenger.fbx
-		if (!gameObject.Initialize("Data\\Objects\\Samples\\dodge_challenger.fbx", this->device.Get(), this->deviceContext.Get(), this->cb_vs_vertexshader))
+		if (!gameObject.Initialize("Data\\Objects\\nanosuit\\nanosuit.obj", this->device.Get(), this->deviceContext.Get(), this->cb_vs_vertexshader))
 			return false;
 
 		if (!light.Initialize(this->device.Get(), this->deviceContext.Get(), this->cb_vs_vertexshader))
